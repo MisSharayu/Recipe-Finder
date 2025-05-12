@@ -1,0 +1,37 @@
+.loader-bounce {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .loader-bounce div {
+    width: 16px;
+    height: 16px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    animation: bounce 0.6s infinite alternate; 
+  }
+  
+  .loader-bounce div:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .loader-bounce div:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in-up {
+    animation: fadeInUp 1.5s ease-out forwards;
+  }
+  
